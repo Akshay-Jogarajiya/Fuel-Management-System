@@ -31,3 +31,30 @@ To run the project locally:
 
 ## 📸 Screenshots
 
+Register Page :
+
+![Register Page](images/register_page.png)
+
+Login Page :
+
+![Login Page](images/login_page.png)
+
+Add Fuel Data Page :
+
+![Add Fuel Data Page](images/add_fuel_data_page.png)
+
+Fuel Efficiency Over Time Page :
+
+![Fuel Efficiency Over Time Page](images/reports1_page.png)
+
+Monthly Fuel Consumption Page :
+
+![Monthly Fuel Consumption Page](images/reports4_page.png)
+
+Fuel Cost Distribution Page
+
+![Fuel Cost Distribution Page](images/reports2_page.png)
+
+Monthly Breakdown Page
+
+![Monthly Breakdown Page](images/reports3_page.png)
