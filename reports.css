@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /* background-color: #ecf0f1; */
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.container {
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    /* padding: 1rem; */
+}
+
+#statistics {
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 1.4rem auto;
+    padding: 1.2rem;
+    max-width: 50rem;
+}
+
+#statistics p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#statistics strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#statistics span {
+    color: #16a085;
+    font-weight: bold;
+}
+
+#charts {
+    margin: 3.6rem auto;
+    padding: 1.2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 55rem;
+    text-align: center;
+    /* overflow-x: hidden; */
+}
+
+canvas {
+    margin: 1.6rem auto;
+    /* display: block; */
+    /* height: auto;  */
+}
+
+#efficiencyChart {
+    max-width: 70%;
+    width: 70%;
+}
+
+#consumptionChart {
+    max-width: 70%;
+    width: 70%;
+}
+
+#costChart {
+    max-width: 47%;
+    width: 47%;
+}
+
+/* Monthly Report Section */
+#monthly-report {
+    margin: 2.8rem auto;
+    max-width: 56rem;
+    padding: 1.1rem;
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 0.6rem;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+}
+
+tbody td:nth-child(1) {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #statistics, #charts, #monthly-report {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}

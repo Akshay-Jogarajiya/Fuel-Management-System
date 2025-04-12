@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Petrol Stations</title>
+    <link rel="stylesheet" href="stations.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fuel Tracker</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-fuel-data.html">Add Fuel Data</a></li>
+                <li><a href="reports.html">View Reports</a></li>
+                <li><a href="stations.html">Find Petrol Stations</a></li>
+            </ul>
+        </nav>
+        <div id="auth-links">
+            <button class="btn" id="loginBtn">Login</button>
+            <button class="btn" id="registerBtn">Register</button>
+            <button class="btn" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <section class="find-stations">
+        <h3>Find Nearby Petrol Stations</h3>
+        <div id="map">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>Contact us  : support@fueltracker.com  |  +123 456 7890</p>
+            
+            <p>&copy; 2024 Fuel Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="stations.js"></script>
+    <!-- Load Google Maps JavaScript API with Places library -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUuKirXOJ8E0qlQ9B7vJ6L4UoVbxUniXM&libraries=places&callback=initializeMap" async defer></script>
+
+
+</body>
+</html>

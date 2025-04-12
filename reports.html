@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Tracker - Reports</title>
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Fuel Tracker</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-fuel-data.html">Add Fuel Data</a></li>
+                <li><a href="reports.html">View Reports</a></li>
+                <li><a href="stations.html">Find Petrol Stations</a></li>
+            </ul>
+        </nav>
+        <div id="auth-links">
+            <button class="btn" id="loginBtn">Login</button>
+            <button class="btn" id="registerBtn">Register</button>
+            <button class="btn" id="logoutBtn">Logout</button>
+        </div>
+    </header>    
+
+    <section id="statistics">
+        <h2>Fuel Consumption Statistics</h2>
+        <p><strong>Total Distance Covered:</strong> <span id="totalDistance">0</span> km</p>
+        <p><strong>Total Fuel Consumed:</strong> <span id="totalFuel">0</span> liters</p>
+        <p><strong>Fuel Efficiency (km/liter):</strong> <span id="fuelEfficiency">0</span> km/l</p>
+        <p><strong>Average Fuel Price:</strong> <i class="fa-solid fa-indian-rupee-sign"></i> <span id="avgFuelPrice">0</span> per liter</p>
+    </section>
+
+    <section id="charts">
+        <h2>Visual Representation</h2>
+        
+        <h3>Fuel Efficiency Over Time</h3>
+        <canvas id="efficiencyChart"></canvas>
+    
+        <h3>Monthly Fuel Consumption</h3>
+        <canvas id="consumptionChart"></canvas>
+    
+        <h3>Fuel Cost Distribution</h3>
+        <canvas id="costChart"></canvas>
+    </section>    
+
+    <section id="monthly-report">
+        <h2>Monthly Breakdown</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Total Distance (km)</th>
+                    <th>Total Fuel (liters)</th>
+                    <th>Fuel Efficiency (km/liter)</th>
+                    <th>Total Cost ( <i class="fa-solid fa-indian-rupee-sign"></i> )</th>
+                </tr>
+            </thead>
+            <tbody id="monthlyData">
+    
+
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>Contact us  : support@fueltracker.com  |  +123 456 7890</p>
+            
+            <p>&copy; 2024 Fuel Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="reports.js"></script>
+</body>
+</html>

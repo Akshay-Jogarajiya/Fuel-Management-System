@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /* background-color: #ecf0f1; */
+    /* background-color: #f4f7f6; */
+    background-color: #c2c2ca;
+    /* color: #333; */
+}
+/* .find-stations {
+    margin: 3rem auto;
+    height: 45rem;
+    background-color: #dddde1;
+} */
+
+.find-stations {
+    /* margin: 3rem auto; */
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 3rem 0 0 0;
+    text-align: center;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 26rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4rem auto;
+}
